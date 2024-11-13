@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Base de Datos con JSON</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Papeleria y mas!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos!</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Categorias
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Lapices/plumas/marcadores</a></li>
+                        <li><a class="dropdown-item" href="#">Hojas o papeleria</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="text-center my-4">Tu papelería online</h1>
+    <h2 class="text-center my-4" style="color:rgb(88, 91, 109)">Los mejores productos para tu papeleria!</h2>
+    <div id="productos" class="row justify-content-center"></div>
+</div>
+
+<script>
+    const productos = [
+        {
+            "title": "Lápiz BIC 50 pz",
+            "description": "Lápices de alta calidad con punta de grafito y borrador de goma. Caja con 50 piezas.",
+            "image": "lapices.jpg",
+            "cost": 150.20
+        },
+        {
+            "title": "Pluma BIC 50 pz",
+            "description": "Plumas BIC de tinta de alta calidad, caja con 50 piezas. Colores vivos y escritura suave.",
+            "image": "Pluma negra.jpg",
+            "cost": 200.50
+        },
+        {
+            "title": "Hojas Blancas 200 pz",
+            "description": "Paquete de 200 hojas blancas de alta calidad, ideal para imprimir, escribir o dibujar.",
+            "image": "hojas.jpg",
+            "cost": 110.50
+        },
+        {
+            "title": "Cartulinas 25 pz",
+            "description": "Paquete de 25 cartulinas de colores variados, perfectas para manualidades, presentaciones y proyectos escolares.",
+            "image": "cartulinas.jpg",
+            "cost": 50.50
+        },
+        {
+            "title": "Cuadernos Notebook 20 pz",
+            "description": "Pack de 20 cuadernos tipo notebook, con hojas rayadas, ideales para la escuela o trabajo.",
+            "image": "cuadrenos.jpg",
+            "cost": 300.30
+        },
+        {
+            "title": "Colores Mapita 30 pz",
+            "description": "Set de 30 colores Mapita de alta calidad, perfecto para dibujar, colorear y realizar manualidades.",
+            "image": "images.jpg",
+            "cost": 350.90
+        },
+        {
+            "title": "Plumas de Colores BIC 50 pz",
+            "description": "Juego de 50 plumas de colores BIC, con tinta de secado rápido y colores brillantes para todo tipo de escritura y dibujo.",
+            "image": "plumas de colores.jpg",
+            "cost": 250.60
+        },
+        {
+            "title": "Borrador de Goma 40 pz",
+            "description": "Borradores de goma de alta calidad, paquete con 40 unidades, ideales para uso escolar y oficina.",
+            "image": "borradores.jpg",
+            "cost": 160.00
+        },
+        {
+            "title": "Juego Geométrico 40 pz",
+            "description": "Set de 40 piezas de geometría, incluye transportadores, escuadras y reglas. Ideal para estudiantes y profesionales.",
+            "image": "reglas.jpg",
+            "cost": 250.00
+        },
+        {
+            "title": "Marcadores BIC Colores 50 pz",
+            "description": "Set de 50 marcadores BIC de colores intensos y duraderos. Perfectos para todo tipo de proyectos artísticos.",
+            "image": "sharpis.jpg",
+            "cost": 500.00
+        }
+    ];
+
+    function cargarProductos() {
+        const contenedor = document.getElementById('productos');
+        productos.forEach(producto => {
+            const productoHTML = `
+                <div class="col-md-4 mb-4 producto">
+                    <div class="card">
+                        <img src="${producto.image}" class="card-img-top product-image" alt="${producto.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.title}</h5>
+                            <p class="card-text">${producto.description}</p>
+                            <p class="card-text"><strong>Precio: $${producto.cost}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            contenedor.innerHTML += productoHTML;
+        });
+    }
+
+    window.onload = cargarProductos;
+</script>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p>&copy; 2024 Tu Papeleria Online. Todos los derechos reservados.</p>
+                <p><a href="mailto:contacto@papeleria123arroba.com">contacto@papeleria123arroba.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

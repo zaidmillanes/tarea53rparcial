@@ -1,0 +1,63 @@
+[
+    {
+      "title": "Lápiz BIC 50 pz",
+      "description": "Lápices de alta calidad con punta de grafito y borrador de goma. Caja con 50 piezas.",
+      "image": "https://images.pexels.com/photos/238541/pexels-photo-238541.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 150.20
+    },
+    {
+      "title": "Pluma BIC 50 pz",
+      "description": "Plumas BIC de tinta de alta calidad, caja con 50 piezas. Colores vivos y escritura suave.",
+      "image": "https://images.pexels.com/photos/5192094/pexels-photo-5192094.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 200.50
+    },
+    {
+      "title": "Hojas Blancas 200 pz",
+      "description": "Paquete de 200 hojas blancas de alta calidad, ideal para imprimir, escribir o dibujar.",
+      "image": "https://images.pexels.com/photos/4014119/pexels-photo-4014119.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 110.50
+    },
+    {
+      "title": "Cartulinas 25 pz",
+      "description": "Paquete de 25 cartulinas de colores variados, perfectas para manualidades, presentaciones y proyectos escolares.",
+      "image": "https://images.pexels.com/photos/2193295/pexels-photo-2193295.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 50.50
+    },
+    {
+      "title": "Cuadernos Notebook 20 pz",
+      "description": "Pack de 20 cuadernos tipo notebook, con hojas rayadas, ideales para la escuela o trabajo.",
+      "image": "https://images.pexels.com/photos/10567238/pexels-photo-10567238.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 300.30
+    },
+    {
+      "title": "Colores Mapita 30 pz",
+      "description": "Set de 30 colores Mapita de alta calidad, perfecto para dibujar, colorear y realizar manualidades.",
+      "image": "https://images.pexels.com/photos/1048273/pexels-photo-1048273.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 350.90
+    },
+    {
+      "title": "Plumas de Colores BIC 50 pz",
+      "description": "Juego de 50 plumas de colores BIC, con tinta de secado rápido y colores brillantes para todo tipo de escritura y dibujo.",
+      "image": "https://images.pexels.com/photos/5192094/pexels-photo-5192094.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 250.60
+    },
+    {
+      "title": "Borrador de Goma 40 pz",
+      "description": "Borradores de goma de alta calidad, paquete con 40 unidades, ideales para uso escolar y oficina.",
+      "image": "https://images.pexels.com/photos/1576221/pexels-photo-1576221.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 160.00
+    },
+    {
+      "title": "Juego Geométrico 40 pz",
+      "description": "Set de 40 piezas de geometría, incluye transportadores, escuadras y reglas. Ideal para estudiantes y profesionales.",
+      "image": "https://images.pexels.com/photos/45661/pexels-photo-45661.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 250.00
+    },
+    {
+      "title": "Marcadores BIC Colores 50 pz",
+      "description": "Set de 50 marcadores BIC de colores intensos y duraderos. Perfectos para todo tipo de proyectos artísticos.",
+      "image": "https://images.pexels.com/photos/1548599/pexels-photo-1548599.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "cost": 500.00
+    }
+  ]
+  
